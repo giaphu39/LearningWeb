@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+
+        ul{
+            display:none
+        }
+        input:focus ~ ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+    <a href="https://www.youtube.com/watch?v=4ZnQur6rewg&t=81s">
+        Học lập trình
+    </a>
+    <br/>
+    <a href="https://google.com.vn">
+        Tìm kiếm 
+    </a> 
+
+    <input placeholder="Tìm kiếm">
+    <ul>
+        <li>java</li>
+        <li>javascript</li>
+        <li>C</li>
+
+    </ul>
+
+    <div onclick="console.log('DIV')">
+        DIV
+        <button onclick="console.log('Click me')">Click me</button>
+    </div>
+    <!-- như vậy khi bấm click me vẫn hiện div do hành vi nổi bọt -->
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
