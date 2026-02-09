@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- tác động đến các thao tác trong nó luôn (sự kiện nổi bọt thao tác từ con đến cha) -->
+    <h1 onclick = "console.log(Math.random())"> onclick </h1>
+
+    <!-- di chuột vào -->
+     <!--this trả về element node -->
+    <div class="button" onmouseover="console.log(this.textContent)"> 
+        <div class="" onmouseout="console.log('thao tác từ trong do nổi bọt ')"> thao tác </div>
+    </div>
+
+    <div class="testQuery">viết trong file js</div>
+
+    <div class="QAll"> viết event cho tất cả đoạn cần chọn</div>
+    <div class="Qall"> test2</div>
+    <script src="index.js"></script>
+</body>
+</html>
